@@ -8,6 +8,7 @@ Funcionalidade: Buscar produtos Amazon
 
    			
 Cenário: Consulta com sucesso 
-    Dado que defini o filtro "macbook pro com intel core i7 16GB" no website do e-commerce
-    Quando buscar o produto
+    Dado que acessei o website do e-commerce 
+    E que defini o filtro "macbook pro com intel core i7 16GB" 
+    Quando busco o produto
     Então deve visualizar na tela o mesmo nome do produto selecionado no resultado da filtro
