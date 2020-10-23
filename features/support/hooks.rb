@@ -8,5 +8,6 @@ Before do
     nome = nome.gsub(/([_@#!%()\-=;><,{}\~\[\]\.\/\?\"\*\^\$\+\-]+)/,'')
     print = "reports/evidences/#{nome}.png"
     page.save_screenshot(print)
-    embed(print, 'image/png', 'Clique aqui para ver as evidências')
+    # embed(print, 'image/png', 'Clique aqui para ver as evidências')
+    attach(file, media_type)
   end
