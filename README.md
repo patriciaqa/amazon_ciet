@@ -17,6 +17,7 @@ Configuração do ambiente necessária:
 4. Salve o executável "chromedriver" no diretório "C:\Windows" 
 5. Execute: 
      Cucumber ou cucumber features\spec\buscar_produtos.feature (windows) 
+     
      bundle exec cucumber(linux/Mac) 
 
 [Report] Relatório de execução está disponível em amazon_ciet\reports
