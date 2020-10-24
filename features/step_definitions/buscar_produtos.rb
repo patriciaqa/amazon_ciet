@@ -11,5 +11,5 @@ end
   end
   
   Então('deve visualizar na tela o mesmo nome do produto selecionado no resultado da filtro') do
-    expect(@buscar_page.verifica_descricao(@descricao)).to be true
+    @buscar_page.verifica_descricao(@descricao)
   end

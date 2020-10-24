@@ -20,7 +20,7 @@ class ProdutoPage
 
 
     def verifica_descricao(descricao)
-
+        page.has_css?('#productTitle', text: descricao)
     end
 
 end
