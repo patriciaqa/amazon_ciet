@@ -4,10 +4,10 @@ Before do
     
   
   After do |scenario|
-    nome = scenario.name.tr(' ', '_').downcase!
-    nome = nome.gsub(/([_@#!%()\-=;><,{}\~\[\]\.\/\?\"\*\^\$\+\-]+)/,'')
-    print = "reports/evidences/#{nome}.png"
-    page.save_screenshot(print)
-    # embed(print, 'image/png', 'Clique aqui para ver as evidências')
-    attach(print, 'image/png')
+    nome_cenario = scenario.name.gsub(/[^A-Za-z0-9]/, '')
+    nome_cenario = nome_cenario.gsub(' ','_').downcase!
+    screenshot = "reports/evidences/#{nome_cenario}.png"
+    page.save_screenshot(screenshot)
+    # embed(screenshot, 'image/png', 'Evidência')
+    attach(screenshot, 'image/png')
   end
